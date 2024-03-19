@@ -80,10 +80,10 @@ int main()
 		bangCount++;
 		};
 
-	// Program Runs Until Ball Strikes Center Square Twice (Bang 0 = First Touch)
+	// Program Runs Until Ball Strikes Center Square Thrice (Bang 0 = First Touch)
 	Clock clock;
 	Time lastTime(clock.getElapsedTime());
-	while (bangCount <= 1) {
+	while (bangCount <= 2) {
 		Time currentTime(clock.getElapsedTime());
 		Time deltaTime(currentTime - lastTime);
 		int deltaTimeMS(deltaTime.asMilliseconds());
